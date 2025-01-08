@@ -35,7 +35,7 @@ export const usePeople = () => {
         onSuccess: (message: string) => {
             queryClient.invalidateQueries({queryKey: ['persons']}).then(r => {
                 console.info('Invalidated:', r);
-            }); // Correct usage
+            });
             Toast.show({
                 type: 'success',
                 text1: '¡Éxito!',
@@ -58,7 +58,7 @@ export const usePeople = () => {
         onSuccess: (message: string) => {
             queryClient.invalidateQueries({queryKey: ['persons']}).then(r => {
                 console.info('Invalidated:', r);
-            }); // Correct usage
+            });
             console.log('Person deleted:', message);
             Toast.show({
                 type: 'success',

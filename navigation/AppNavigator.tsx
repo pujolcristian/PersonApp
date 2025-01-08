@@ -13,21 +13,21 @@ export default function AppNavigator() {
             initialRouteName={'PeopleScreen'}
             screenOptions={{
                 headerStyle: {
-                    backgroundColor: 'gray', // Cambia el fondo del header
+                    backgroundColor: 'gray',
                 },
                 headerTitleStyle: {
                     fontFamily: 'galano-heavy',
-                    color: COLORS.white, // Color del texto
-                    fontSize: 18, // Tamaño del texto
+                    color: COLORS.white,
+                    fontSize: 18,
                 },
-                headerTitleAlign: 'center', // Alinea el texto en el centro
+                headerTitleAlign: 'center',
             }}
         >
             <Stack.Screen
                 name="PeopleScreen"
                 component={PeopleScreen}
                 options={{
-                    title: 'Lista de Personas', // Título personalizado
+                    title: 'Lista de Personas',
                 }}
             />
         </Stack.Navigator>

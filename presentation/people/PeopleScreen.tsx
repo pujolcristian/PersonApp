@@ -36,13 +36,11 @@ export const PeopleScreen = () => {
             <LoadingModal
                 isVisible={personsQuery.isLoading}/>
 
-            {/* Person List */}
             <PersonList
                 persons={personsQuery.data ?? []}
                 onEdit={handleEditPerson}
                 onDelete={(id: number) => deletePersonMutation.mutate(id)}
             />
-            {/* Person Modal */}
             <PersonModal
                 person={modalEditPerson}
                 isVisible={modalAddPerson || modalEditPerson !== null}
@@ -51,7 +49,6 @@ export const PeopleScreen = () => {
                 onEdit={(person) => updatePersonMutation.mutate(person)}
             />
 
-            {/* Floating Add Button */}
             <TouchableOpacity style={styles.floatingButton} onPress={handleAddPerson}>
                 <Ionicons name="add" size={24} color={COLORS.white}/>
             </TouchableOpacity>
