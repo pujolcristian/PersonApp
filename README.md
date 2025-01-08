@@ -1,4 +1,4 @@
-#PersonaApp
+# PersonaApp
 
 ## Descripción general
 
@@ -6,7 +6,7 @@ PersonApp es un proyecto React Native creado con Expo para administrar y mostrar
 
 ---
 
-##Requisitos previos
+## Requisitos previos
 
 Antes de comenzar, asegúrese de tener instalado lo siguiente:
 
